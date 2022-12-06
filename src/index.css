@@ -12,7 +12,67 @@ code {
     monospace;
 }
 
-.logo {
-  width: 200px;
+@font-face {
+  font-family: "Mainfont";
+  src: local("Homade"), url("./fonts/Homade.otf") format("truetype");
 }
+
+.logo {
+  width: 230px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 100px;
+  }
+}
+
+.sidebar {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  z-index: 1;
+  display: block;
+  text-align: center;
+  transition: transform 0.5s;
+  transform: translate(0%);
+}
+
+.hideSidebar {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  z-index: 1;
+  display: block;
+  text-align: center;
+  transition: transform 0.5s;
+  transform: translate(100%);
+}
+
+ul {
+  list-style-type: none;
+  font-family: "Mainfont";
+  margin-top: 6em;
+}
+
+li {
+  margin-top: 1em;
+}
+
+.row {
+  margin-left: 2.5em;
+}
+
 
