@@ -4,9 +4,18 @@ import { styled } from '@mui/material/styles'
 import MenuIcon from '@mui/icons-material/Menu';
 import { useGlobalContext } from './Context';
 
+const StyledAppBar = styled(AppBar)(({theme}) => ({
+  backgroundColor: 'white', 
+  boxShadow: 'none', 
+  color: 'black', 
+  textAlign: 'center', 
+  padding: '1.5em',
+}));
+
 const StyledTypography = styled(Typography)(({ theme }) => ({
   fontFamily: 'Mainfont',
   flexGrow: 1,
+  fontSize: '1.2em',
   [theme.breakpoints.down('lg')]: {display: 'none'},
 }));
  
@@ -29,16 +38,19 @@ const StyledIcon = styled(MenuIcon)(({theme}) => ({
   [theme.breakpoints.down('sm')]: {fontSize: 'medium'},
 }));
 
+
 const Navbar = () => {
 
-  const {isSidebarOpen, setIsSidebarOpen} = useGlobalContext();
+  const {isSidebarOpen, setIsSidebarOpen, setScrolling} = useGlobalContext();
+
+  console.log(isSidebarOpen);
 
   return (
     <>
     <nav>
       <Box sx={{maxWidth: '1200px', margin: '0 auto'}}>
-      <AppBar position="static" sx={{backgroundColor: 'white', boxShadow: 'none', color: 'black', textAlign: 'center', padding: '1.8em', justifyContent: 'space-between'}}>
-        <Toolbar>
+      <StyledAppBar position="static">
+        <Toolbar sx={{}}>
           <StyledTypography variant="h6" component="div">HOME</StyledTypography>
           <StyledTypography variant="h6" component="div" >NEWS</StyledTypography>
           <StyledTypography variant="h6" component="div" >GIGS</StyledTypography>
@@ -47,10 +59,10 @@ const Navbar = () => {
           <StyledTypography variant="h6" component="div" >MEDIA</StyledTypography>
           <StyledTypography variant="h6" component="div">MUSIC</StyledTypography>
           <StyledBtn>EN</StyledBtn>
-          <StyledBtn>IT</StyledBtn>
-          <StyledIcon fontSize='large' onClick={() => {setIsSidebarOpen(!isSidebarOpen); console.log(isSidebarOpen);}}/>
+          <StyledBtn>IT</StyledBtn>        
+          <StyledIcon fontSize='large' onClick={() => {setScrolling(!isSidebarOpen); setIsSidebarOpen(!isSidebarOpen)}}/>
         </Toolbar>
-      </AppBar>
+      </StyledAppBar>
       </Box>
     </nav>
     </> 

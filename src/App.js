@@ -1,12 +1,12 @@
-import Home from "./Home";
-import "./fonts/Homade.otf"
+import Mainpage from "./Mainpage";
+import "./fonts/Homade.otf";
 
 function App() {
   
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <main className="App">
+      <Mainpage />
+    </main>
   );
 }
 

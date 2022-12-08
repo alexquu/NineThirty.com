@@ -6,10 +6,16 @@ const AppProvider = ({children}) => {
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+    const setScrolling = (el) => {
+        if(el) {document.body.style.overflow = 'hidden'} 
+        else {document.body.style.overflow = 'scroll'}  
+    }
+
     return (
         <AppContext.Provider value={{
             isSidebarOpen,
-            setIsSidebarOpen
+            setIsSidebarOpen,
+            setScrolling
         }}>
             {children}
         </AppContext.Provider>
