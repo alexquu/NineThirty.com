@@ -20,7 +20,9 @@ code {
 }
 
 .logo {
-  width: 200px;
+  width: 11vw;
+  display: flex;
+  flex-shrink: 0;
 }
 
 .sidebar {
@@ -51,13 +53,18 @@ code {
   transform: translate(100%);
 }
 
-.sidebarLinks {
+.sidebarUl {
   list-style-type: none;
   margin-top: 6em;
 }
 
-.sidebarLink {
+.sidebarUl a {
+  text-decoration: none;
+}
+
+.sidebarLi {
   margin-top: 1em;
+  color: white;
 }
 
 .sidebarComponentPos {
@@ -69,36 +76,39 @@ code {
   margin-left: 8em;
 }
 
-a:link, a:visited {
-  color: black;
-  text-decoration: none;
-}
+.sidebarComponentPos a {
+  color: white;
+} 
 
 .socialBar {
   display: flex;
   justify-content: center;
-  margin-right: 5em;
   gap: 1em;
+  margin-bottom: 1em;
+}
+
+.socialBar a {
+  color: black;
+  margin-right: 0.5em;
 }
 
 .coverContainer {
+  margin: auto;
   display: grid;
-  justify-content: center;
-  margin-top: 1em;
   background-image: url("/public/cover.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 62vw;
-  width: 100vw;
+  height: 50vw;
+  border-radius: 15px;
 }
 
 .coverInfo {
   color: white;
   display: inline-block;
-  font-size: 1.9vw;
+  font-size: 1.8vw;
   text-align: center;
-  margin-top: 1.1em;
+  margin-top: 0.6em;
 }
 
 .musicContainer {
@@ -131,6 +141,11 @@ a:link, a:visited {
   font-weight: bold;
 }
 
+.musicBox a {
+  color: black;
+  text-decoration: none;
+}
+
 .footer {
   display: grid;
   grid-template-columns: auto auto;
@@ -140,26 +155,25 @@ a:link, a:visited {
   font-size: larger;
 }
 
+.newsContainer {
+  margin-top: 6em;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
 @media screen and (max-width: 1200px) {
   .socialBar {
     display: none;
   }
 
-  .logo {
-    width: 200px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .logo {
-    width: 150px;
+  .newsContainer {
+    font-size: 2em;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .logo {
-    width: 100px;
-  }
 
   .musicBoxes{
     grid-template-columns: auto;
@@ -169,6 +183,10 @@ a:link, a:visited {
     font-size: small;
     grid-template-columns: auto;
     text-align: center;
+  }
+
+  .newsContainer {
+    font-size: 1em;
   }
 }
 
