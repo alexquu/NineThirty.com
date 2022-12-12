@@ -1,10 +1,16 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 
 const News = () => {
   return (
-    <section className='newsContainer'>
+  <>
+    <Navbar/>
+    <Sidebar />
+    <section className='container'>
       <p>NO NEWS AVAILABLE</p>
     </section>
+  </>
   )
 }
 

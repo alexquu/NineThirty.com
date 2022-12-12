@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 
 const Bio = () => {
   return (
-    <div>Bio</div>
+    <>
+    <Navbar/>
+    <Sidebar />
+    <section className='container'>
+      <p>NO BIO AVAILABLE</p>
+    </section>
+  </>
   )
 }
 
