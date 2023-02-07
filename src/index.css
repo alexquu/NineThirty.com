@@ -116,11 +116,12 @@ code {
   margin: 0 auto;
   text-align: center;
   padding: 1em;
+  font-size: 1em;
 }
 
 .player {
   width: 50vw;
-  height: 300px;
+  height: 200px;
   border-radius: 5px;
 }
 
@@ -187,6 +188,15 @@ code {
 
   .newsContainer {
     font-size: 1em;
+  }
+
+  .musicContainer {
+    font-size: 0.8em;
+    width: auto;
+  }
+
+  .player {
+    width: 80vw;
   }
 }
 

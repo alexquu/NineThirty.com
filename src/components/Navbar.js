@@ -68,12 +68,10 @@ const Navbar = () => {
             <StyledBtn>EN</StyledBtn>
             <StyledBtn>IT</StyledBtn> 
           </div>
-          
           <StyledIcon onClick={() => {setScrolling(!isSidebarOpen); setIsSidebarOpen(!isSidebarOpen)}}/>
         </Toolbar>
       </StyledAppBar>
       </StyledBox>
-      
     </nav>
     </> 
   );
