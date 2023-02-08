@@ -156,8 +156,8 @@ code {
   margin-top: 3em;
   display: grid;
   justify-content: center;
-  align-items: center;
   font-size: 3em;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -204,6 +204,10 @@ code {
 
   .logo{
     width: 80px;
+  }
+
+  .container {
+    font-size: 2em;
   }
 }
 
