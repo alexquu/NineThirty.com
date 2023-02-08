@@ -65,10 +65,10 @@ const Navbar = () => {
           <StyledLink to={'/Bio'}><Typography variant="h7" component="div" style={{fontFamily: 'Mainfont'}}>BIO</Typography></StyledLink>
           <StyledLink to={'/Media'}><Typography variant="h7" component="div" style={{fontFamily: 'Mainfont'}}>MEDIA</Typography></StyledLink>
           <StyledLink to={'/Contact'}><Typography variant="h7" component="div" style={{fontFamily: 'Mainfont'}}>CONTACT</Typography></StyledLink>
-          <div style={{position: 'absolute', left: '100%', display: 'flex'}}>
+          {/* <div style={{position: 'absolute', left: '100%', display: 'flex'}}>
             <StyledBtn>EN</StyledBtn>
             <StyledBtn>IT</StyledBtn> 
-          </div>
+          </div> */}
           <StyledIcon onClick={() => {setScrolling(!isSidebarOpen); setIsSidebarOpen(!isSidebarOpen)}}/>
         </Toolbar>
       </StyledAppBar>
