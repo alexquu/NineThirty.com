@@ -108,7 +108,7 @@ code {
   display: inline-block;
   font-size: 1.8vw;
   text-align: center;
-  margin-top: 0.6em;
+  margin-top: 0.8em;
 }
 
 .musicContainer {
@@ -192,12 +192,20 @@ code {
 
   .musicContainer {
     font-size: 0.8em;
-    width: auto;
   }
 
   .player {
-    width: 80vw;
+    width: 60vw;
   }
+
+  .coverContainer {
+    height: 60vw;
+  }
+  
+  .coverInfo {
+    margin-top: 1.1em;
+  }
+
 }
 
 

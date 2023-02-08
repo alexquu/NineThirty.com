@@ -6,8 +6,9 @@ import { useGlobalContext } from '../Context';
 import { Link } from 'react-router-dom';
 
 const StyledBox = styled(Box)(({theme}) => ({
-  margin: 'auto', width: '66%', display: 'flex',
+  margin: 'auto', width: '68%', display: 'flex',
   [theme.breakpoints.down('lg')]: {width: '58%'},
+  [theme.breakpoints.down('sm')]: {width: '68%'},
 }));
 
 const StyledAppBar = styled(AppBar)(({theme}) => ({
