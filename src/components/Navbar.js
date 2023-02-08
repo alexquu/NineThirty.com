@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const StyledBox = styled(Box)(({theme}) => ({
   margin: 'auto', width: '68%',display: 'flex', padding: '0',
-  [theme.breakpoints.down('lg')]: {width: '58%'},
+  [theme.breakpoints.down('lg')]: {width: '60%'},
   [theme.breakpoints.down('sm')]: {width: '70%', padding: '0'},
 }));
 
