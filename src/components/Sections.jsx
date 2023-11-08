@@ -23,30 +23,26 @@ const Sections = () => {
           loading="lazy"
         ></iframe>
         <h2>More music:</h2>
-        <ul className="musicBoxes">
-          <li className="musicBox">
-            <MusicNoteIcon fontSize="small" />
-            &nbsp;
-            <a
-              href="https://music.apple.com/it/artist/9-thirty/1590858341"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              APPLE MUSIC
-            </a>
-          </li>
-          <li className="musicBox">
+        <div className="musicBoxes">
+          <a
+            href="https://music.apple.com/it/artist/9-thirty/1590858341"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="musicBox"
+          >
+            <MusicNoteIcon fontSize="small" style={{ color: "black" }} />
+            <span>APPLE MUSIC</span>
+          </a>
+          <a
+            href="https://music.amazon.it/artists/B09JRGFK11/9-thirty"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="musicBox"
+          >
             <LibraryMusicIcon fontSize="small" />
-            &nbsp;
-            <a
-              href="https://music.amazon.it/artists/B09JRGFK11/9-thirty"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              AMAZON MUSIC
-            </a>
-          </li>
-        </ul>
+            &nbsp; <span>AMAZON MUSIC</span>
+          </a>
+        </div>
       </section>
     </>
   );

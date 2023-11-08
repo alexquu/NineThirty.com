@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useGlobalContext } from "../Context";
 import { Link } from "react-router-dom";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   margin: "auto",
@@ -29,6 +30,7 @@ const StyledLink = styled(Link)(({ theme }) => ({
   color: "black",
   textDecoration: "none",
   [theme.breakpoints.down("lg")]: { display: "none" },
+  "&:hover": { textDecoration: "underline", paddingBottom: "4px" },
 }));
 
 // const StyledBtn = styled(Button)(({ theme }) => ({

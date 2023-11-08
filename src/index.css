@@ -33,7 +33,7 @@ code {
   bottom: 0;
   z-index: 1;
   text-align: center;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
   transform: translate(0%);
 }
 
@@ -136,10 +136,23 @@ code {
   padding: 2em;
   border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.musicBox a {
+.musicBox:hover {
+  margin: -2px;
+}
+
+.musicBox span {
   color: black;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a {
   text-decoration: none;
 }
 
