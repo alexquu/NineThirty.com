@@ -6,10 +6,15 @@ const Sections = () => {
   return (
     <>
       <section className="coverContainer">
-        <div className="coverInfo">
+        <span className="coverSentence">
           NEW ALBUM <br />
           OUT NOW
-        </div>
+        </span>
+        <img src="cover.jpg" alt="cover" className="coverImg" />
+        <span className="coverInfo">
+          HEY MAN, <br />
+          DON'T LOSE YOUR WALLET!
+        </span>
       </section>
       <section className="musicContainer">
         <h2>Listen us on Spotify:</h2>
@@ -23,7 +28,7 @@ const Sections = () => {
           loading="lazy"
         ></iframe>
         <h2>More music:</h2>
-        <div className="musicBoxes">
+        <span className="musicLinks">
           <a
             href="https://music.apple.com/it/artist/9-thirty/1590858341"
             target="_blank"
@@ -39,10 +44,10 @@ const Sections = () => {
             rel="noreferrer noopener"
             className="musicBox"
           >
-            <LibraryMusicIcon fontSize="small" />
+            <LibraryMusicIcon fontSize="small" style={{ color: "black" }} />
             &nbsp; <span>AMAZON MUSIC</span>
           </a>
-        </div>
+        </span>
       </section>
     </>
   );

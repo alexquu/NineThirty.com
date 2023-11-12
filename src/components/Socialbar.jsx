@@ -12,24 +12,24 @@ const Socialbar = () => {
         target="_blank"
         rel="noreferrer noopener"
       >
-        <FacebookIcon />
+        <FacebookIcon style={{ fontSize: "2em" }} />
       </a>
       <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-        <TwitterIcon />
+        <TwitterIcon style={{ fontSize: "2em" }} />
       </a>
       <a
         href="https://www.instagram.com/"
         target="_blank"
         rel="noreferrer noopener"
       >
-        <InstagramIcon />
+        <InstagramIcon style={{ fontSize: "2em" }} />
       </a>
       <a
         href="https://www.youtube.com/"
         target="_blank"
         rel="noreferrer noopener"
       >
-        <YouTubeIcon />
+        <YouTubeIcon style={{ fontSize: "2em" }} />
       </a>
     </div>
   );

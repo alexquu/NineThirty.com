@@ -5,11 +5,13 @@ import Sidebar from "../components/Sidebar";
 const News = () => {
   return (
     <>
-      <Navbar />
-      <Sidebar />
-      <section className="container">
-        <p>NO NEWS AVAILABLE</p>
-      </section>
+      <div className="container">
+        <Navbar />
+        <Sidebar />
+        <section className="pagesContainer">
+          <p>NO NEWS AVAILABLE</p>
+        </section>
+      </div>
     </>
   );
 };

@@ -5,11 +5,13 @@ import Sidebar from "../components/Sidebar";
 const Media = () => {
   return (
     <>
-      <Navbar />
-      <Sidebar />
-      <section className="container">
-        <p>NO MEDIA AVAILABLE</p>
-      </section>
+      <div className="container">
+        <Navbar />
+        <Sidebar />
+        <section className="pagesContainer">
+          <p>NO MEDIA AVAILABLE</p>
+        </section>
+      </div>
     </>
   );
 };

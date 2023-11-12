@@ -27,40 +27,42 @@ const StyledBtn = styled(Button)(({ theme }) => ({
 const Contact = () => {
   return (
     <>
-      <Navbar />
-      <Sidebar />
-      <StyledBox component="form" noValidate autoComplete="off">
-        <p style={{ margin: "0 auto" }}>REACH OUT:</p>
-        <TextField
-          className="formName"
-          label="Name"
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
-        <TextField
-          className="formMail"
-          label="Mail"
-          variant="outlined"
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
-        <TextField
-          className="formMessage"
-          label="Message"
-          variant="outlined"
-          multiline
-          rows={5}
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
-        <StyledBtn sx={{}} variant="contained">
-          Send
-        </StyledBtn>
-      </StyledBox>
+      <div className="container">
+        <Navbar />
+        <Sidebar />
+        <StyledBox component="form" noValidate autoComplete="off">
+          <p style={{ margin: "0 auto" }}>REACH OUT:</p>
+          <TextField
+            className="formName"
+            label="Name"
+            variant="outlined"
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
+          <TextField
+            className="formMail"
+            label="Mail"
+            variant="outlined"
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
+          <TextField
+            className="formMessage"
+            label="Message"
+            variant="outlined"
+            multiline
+            rows={5}
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
+          <StyledBtn sx={{}} variant="contained">
+            Send
+          </StyledBtn>
+        </StyledBox>
+      </div>
     </>
   );
 };

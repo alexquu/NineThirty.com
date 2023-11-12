@@ -8,11 +8,13 @@ import Footer from "../components/Footer";
 const Homepage = () => {
   return (
     <>
-      <Navbar />
-      <Sidebar />
-      <Socialbar />
-      <Sections />
-      <Footer />
+      <main className="container">
+        <Navbar />
+        <Sidebar />
+        <Socialbar />
+        <Sections />
+        <Footer />
+      </main>
     </>
   );
 };
