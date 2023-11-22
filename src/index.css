@@ -206,7 +206,8 @@ a {
   }
 
   .coverSentence {
-    font-size: 1.55vw;
+    font-size: 1.54vw;
+    margin-top: 1.1em;
   }
 
   .coverInfo {
@@ -239,7 +240,12 @@ a {
   }
 
   .coverSentence {
-    font-size: 1.5vw;
-    margin-top: 1.5em;
+    font-size: 3.2vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .coverSentence {
+    margin-top: 1.1em;
   }
 }
