@@ -14,7 +14,10 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   margin: "auto",
   padding: "1em",
   [theme.breakpoints.down("lg")]: { padding: "1em" },
-  [theme.breakpoints.down("sm")]: { padding: "0.1em" },
+  [theme.breakpoints.down("sm")]: {
+    paddingLeft: "0em",
+    paddingRight: "0em",
+  },
 }));
 
 const StyledLink = styled(Link)(({ theme }) => ({

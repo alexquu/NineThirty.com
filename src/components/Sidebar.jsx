@@ -25,8 +25,8 @@ const Sidebar = () => {
 
   const StyledIcon = styled(Close)(({ theme }) => ({
     position: "absolute",
-    right: "30%",
-    top: "2%",
+    right: "20%",
+    top: "4%",
     cursor: "pointer",
   }));
 
